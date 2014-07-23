@@ -13,6 +13,7 @@
 		48E354F6197F2F0F004E90D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48E354F4197F2F0F004E90D1 /* Main.storyboard */; };
 		48E354F8197F2F0F004E90D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48E354F7197F2F0F004E90D1 /* Images.xcassets */; };
 		48E35504197F2F0F004E90D1 /* RecordDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E35503197F2F0F004E90D1 /* RecordDemoTests.m */; };
+		48E3550E197F2F62004E90D1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E3550D197F2F62004E90D1 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		48E354FD197F2F0F004E90D1 /* RecordDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecordDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E35502197F2F0F004E90D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48E35503197F2F0F004E90D1 /* RecordDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordDemoTests.m; sourceTree = "<group>"; };
+		48E3550D197F2F62004E90D1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48E3550E197F2F62004E90D1 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +64,7 @@
 		48E354DE197F2F0F004E90D1 = {
 			isa = PBXGroup;
 			children = (
+				48E3550D197F2F62004E90D1 /* AVFoundation.framework */,
 				48E354E9197F2F0F004E90D1 /* RecordDemo */,
 				48E35500197F2F0F004E90D1 /* RecordDemoTests */,
 				48E354E8197F2F0F004E90D1 /* Products */,
@@ -335,6 +339,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = RecordDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -346,6 +351,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = RecordDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
