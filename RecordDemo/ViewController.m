@@ -55,6 +55,9 @@
     {
         NSLog(@"error: %@", [error localizedDescription]);
     } else {
+        AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+        [audioSession setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
+        [audioSession setActive:YES error:nil];
         [_audioRecorder prepareToRecord];
     }
 }
